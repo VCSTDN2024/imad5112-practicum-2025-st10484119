@@ -13,7 +13,7 @@ import androidx.collection.mutableIntListOf
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import kotlin.system.exitProcess
-
+                                        // all arrays
 val songTitles = ArrayList<String>()
  val artistNames = ArrayList<String>()
  val ratings = ArrayList<String>()
@@ -30,7 +30,7 @@ var MaxEntries = 4
 
 
 class MainActivity : AppCompatActivity() {
-
+                                                    // all varaibles that will be called on this page
     private lateinit var ETSongTitle: EditText
     private lateinit var ETArtist: EditText
     private lateinit var ETRating: EditText
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
+                                                        // finding all variables by IDs
         ETSongTitle = findViewById(R.id.ETSongTitle)
         ETComment = findViewById(R.id.ETComment)
         ETArtist = findViewById(R.id.ETArtist)
@@ -55,13 +55,13 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        ExitBtn.setOnClickListener() {
+        ExitBtn.setOnClickListener() {              // exit button function
             finishAffinity()
             exitProcess(0)
         }
 
 
-        DetailBtn.setOnClickListener() {
+        DetailBtn.setOnClickListener() {                                    // Function for the Next screen Button
             val Intent = Intent(this, Details::class.java)
             intent.putExtra("Song Name", songTitles)
             intent.putExtra("Artist Name", artistNames)
@@ -73,8 +73,8 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        fun addSong(title: String, artist: String, rating: String, comment: String) {
-            if (title.isEmpty() || artist.isEmpty() || comment.isEmpty()) {
+        fun addSong(title: String, artist: String, rating: String, comment: String) {                      // function which allows the add button to work
+            if (title.isEmpty() || artist.isEmpty() || comment.isEmpty()) {                                 // error handleing with empty inputs
                 Toast.makeText(this, "Invalid Information", Toast.LENGTH_SHORT).show()
                 return
             } else {
@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        AddBtn.setOnClickListener {
+        AddBtn.setOnClickListener {                                                                           // Add Button which populates the arrays
             if (EntryCount < MaxEntries) {
                 addSong(
                     ETSongTitle.text.toString(),
@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-            } else {
+            } else {                                                                                        // error handleing to allow only 4 entries max
                 Toast.makeText(this, "Max Entries Reached ", Toast.LENGTH_SHORT).show()
             }
         }
