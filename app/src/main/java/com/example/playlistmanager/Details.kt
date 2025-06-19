@@ -38,7 +38,7 @@ class Details : AppCompatActivity() {
         DisplayBtn.setOnClickListener() {                                       // Display Button and code which shows the details of information in the arrays
             val builder = StringBuilder()
             for (i in songTitles.indices) {
-                builder.append("${i + 1}, ${songTitles[1]}" + "${i + 1}, ${artistNames[1]}" + ", ${ratings[1]}" + ", ${comments[1]}")
+                builder.append("${i + 1}, ${songTitles[i]}" + ", ${artistNames[i]}" + ", ${ratings[i]}" + ", ${comments[i]}")
                 builder.append("\n---------------------------\n")
 
             }
