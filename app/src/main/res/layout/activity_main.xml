@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playlist Manager"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/ETSongTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text=""
+        android:hint="Enter Song Name :"
+        android:textStyle="bold"
+        android:translationY="30dp"/>
+
+    <EditText
+        android:id="@+id/ETArtist"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text=""
+        android:hint="Enter Artist Name :"
+        android:textStyle="bold"
+        android:translationY="70dp"/>
+
+    <EditText
+        android:id="@+id/ETRating"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text=""
+        android:hint="Enter rating ( 1-5 ) :"
+        android:textStyle="bold"
+        android:translationY="110dp"
+        />
+
+    <EditText
+        android:id="@+id/ETComment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text=""
+        android:hint="Enter Comment ( e.g. Rap , love song , etc) :"
+        android:textStyle="bold"
+        android:translationY="150dp"/>
+
+    <Button
+        android:id="@+id/DetailBtn"
+        android:layout_width="230dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:text="Details"
+        android:textStyle="bold"
+        android:translationY="280dp"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/ExtBtn"
+        android:layout_width="230dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:foregroundTint="#D81B60"
+        android:text="Exit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#D81B60"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:translationY="320dp" />
+
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="230dp"
+        android:layout_height="75dp"
+        android:text="Add"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:translationY="30dp"/>
+
+</LinearLayout>

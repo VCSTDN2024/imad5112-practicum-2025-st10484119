@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Analytics"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50dp"/>
+
+    <Button
+        android:id="@+id/DisplayBtn"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:text="Display Details"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/AvgBtn"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:text="Average Rating"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:translationY="250dp"/>
+
+    <Button
+        android:id="@+id/BackBtn"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:text="Back"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:translationY="450dp"/>
+
+    <TextView
+        android:id="@+id/tvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:text=""
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:translationY="-119dp"/>
+
+    <TextView
+        android:id="@+id/tvAvg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+</LinearLayout>
